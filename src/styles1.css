@@ -1,0 +1,138 @@
+/* styles1.css */
+
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefae0;
+}
+
+/* Header */
+.header {
+  background-color: #f9c74f;
+  padding: 20px 40px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.note {
+  background: white;
+  width: 280px; /* increase width from default */
+  min-height: 150px;
+  margin: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.note:hover {
+  transform: scale(1.03);
+}
+
+.note h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.note p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #f9c74f;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.create-area {
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white; /* Changed to white */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* lighter shadow for subtle effect */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.create-area input,
+.create-area textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  color: #333;
+  resize: none;
+  font-family: inherit;
+}
+
+.create-area input::placeholder,
+.create-area textarea::placeholder {
+  font-style: italic;
+  color: #888;
+}
+
+.create-area button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #f7b600; /* header-like yellow */
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.create-area button:hover {
+  background: #d19b00; /* slightly darker on hover */
+}
+.note button {
+  background-color: #dba820; /* mustard yellow, similar to header */
+  color: white;
+  border: none;
+  padding: 12px 12px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute; /* position relative to note */
+  bottom: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.note button:hover {
+  background-color: #c19b17; /* slightly darker yellow on hover */
+}
