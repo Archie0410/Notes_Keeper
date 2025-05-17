@@ -16,9 +16,15 @@ function CreateArea(props) {
   }
 
   function submitNote(event) {
-    event.preventDefault(); // Prevent page reload
-    props.onAdd(note); // Send the note back to parent (App)
-    setNote({ title: "", content: "" }); // Clear input fields
+    event.preventDefault();
+
+    if (note.title.trim() === "" || note.content.trim() === "") {
+      alert("Please fill in both the Title and the Content.");
+      return;
+    }
+
+    props.onAdd(note); // Add note
+    setNote({ title: "", content: "" }); // Clear input
   }
 
   return (
