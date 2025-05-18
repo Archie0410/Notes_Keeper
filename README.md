@@ -49,4 +49,4 @@ To run this project locally:
 
 1. Clone the repository
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/Archie0410/Notes_Keeper
