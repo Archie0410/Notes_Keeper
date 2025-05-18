@@ -23,6 +23,7 @@ body {
 }
 
 .note {
+  position: relative;
   background: white;
   width: 280px; /* increase width from default */
   min-height: 150px;
